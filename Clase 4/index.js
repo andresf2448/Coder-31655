@@ -56,6 +56,62 @@ console.log(productos.indexOf("Pantalon")); */
 let producto = prompt("Ingrese el producto a buscar");
 
 alert(productos.includes(producto)); */
-const productos = ["Camisa", "Zapato", "Pantalon", "Gorra"];
+/* const productos = ["Camisa", "Zapato", "Pantalon", "Gorra"];
 productos.reverse();
-console.log(productos);
+console.log(productos); */
+
+/* const productos = ["Camisa", "Zapato", "Pantalon", "Gorra"];
+
+const eliminar = (nombre) => {
+  let posicion = productos.indexOf(nombre);
+
+  if(posicion != -1){
+    productos.splice(posicion, 1);
+  }
+}
+
+let producto = prompt("Ingrese el producto para eliminarlo");
+eliminar(producto);
+console.log(productos); */
+
+/* const productos = [
+  {nombre: "camisa", precio: 1001},
+  {nombre: "pantalon", precio: 1200},
+  {nombre: "gorra", precio: 1500},
+  {nombre: "correa", precio: 2000}
+];
+
+for(const producto of productos){
+  console.log(producto.nombre);
+} */
+
+/* class Producto{
+  constructor(nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.vendido = false;
+  }
+
+  vender(){
+    this.vendido = true;
+  }
+}
+
+const listaProductos = [];
+
+const ventaManual = (producto) => {
+  console.log(listaProductos);
+  console.log(producto);
+  // listaProductos debe ser un arreglo de la forma ["camisa", "pantalon", "gorra", ...]
+  let indexProducto = listaProductos.indexOf(producto);
+  let productoEncontrado = listaProductos[indexProducto];
+  productoEncontrado.vender();
+}
+
+listaProductos.push(new Producto("camisa", 1000));
+listaProductos.push(new Producto("pantalon", 1500));
+listaProductos.push(new Producto("gorra", 1700));
+listaProductos.push(new Producto("correa", 2000));
+
+let nombreProducto = prompt("Ingrese el producto a vender")
+ventaManual(nombreProducto) */
