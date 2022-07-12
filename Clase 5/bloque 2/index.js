@@ -56,7 +56,9 @@ formulario.addEventListener("submit", (e) => {
   if(info.children[0].value.includes("@") && info.children[0].value.includes(".")){
     alert("formulario enviado");
   }else{
-    let info = document.createElement("h1");
+    let info = document.createElement("h5");
+
+
     info.className = "rojo";
     info.innerHTML = "Correo erroneo"
     document.body.append(info);
