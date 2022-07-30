@@ -109,7 +109,7 @@ evento(false)
 }); */
 
 //datos y peticion al servidor
-const BD = [
+/* const BD = [
   { id: 1, nombre: "camisa", precio: 1000 },
   { id: 2, nombre: "zapato", precio: 1000 },
   { id: 3, nombre: "gorra", precio: 1000 },
@@ -118,8 +118,9 @@ const BD = [
 
 const conseguirInfo = () => {
   return new Promise((resolve, recject) => {
+    const producto = BD.find(el => el.id === 1);
     setTimeout(() => {
-      resolve(BD);
+      resolve(producto);
     }, 3000);
   });
 }
@@ -128,4 +129,4 @@ conseguirInfo()
 .then(response => {
   console.log(response);
 })
-.catch(error => console.log(error));
+.catch(error => console.log(error)); */
